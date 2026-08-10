@@ -68,6 +68,346 @@
         </nav>
     </div>
 </header>
+<main>
+<!--Hero Page-->
+<section class="hero" aria-roledescription="carousel" aria-label="Featured services">
+
+    <!--Slide 1-->
+    <div class="slide slide-1 active">
+        <img src="./assets/image/cloud_transformation-bg.jpeg" alt="Data center servers" class="slide-bg">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <h1>Cloud transformation <span>that scales</span></h1>
+            <p>Enterprise-grade cloud solutions designed to accelerate your business. Migrate, modernize, and manage with confidence.</p>
+            <div class="btn-row">
+                <a href="./services.html" class="btn btn-primary">Explore Services →</a>
+                <a href="./contact.html" class="btn btn-outline">▷ Speak with an Architect</a>
+            </div>
+            <div class="features">
+                <span>✓ Enterprise Security</span>
+                <span>✓ 99.9% Uptime SLA</span>
+                <span>✓ 500+ Migrations Completed</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Slide 2-->
+    <div class="slide slide-2">
+        <img src="./assets/image/m365_bg_homepage.jpeg" alt="Data center servers" class="slide-bg">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <div class="slide-badge">✉ Flagship Service</div>
+            <h1>M365 Migration <span>Made Simple</span></h1>
+            <p>Seamlessly migrate to Microsoft 365 with zero data loss and minimal downtime. Expert tenant-to-tenant, Exchange, SharePoint & Teams migrations.</p>
+            <div class="btn-row">
+                <a href="./Services/m365Migration.html" class="btn btn-orange">Get Free Assessment →</a>
+                <a href="./contact.html" class="btn btn-outline">Contact Our Experts</a>
+            </div>
+            <div class="features">
+                <span>✓ Enterprise Security</span>
+                <span>✓ 99.9% Uptime SLA</span>
+                <span>✓ 500+ Migrations Completed</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Arrows-->
+    <button class="arrow arrow-left" onclick="prevSlide()" aria-label="Previous slide">&#10094;</button>
+    <button class="arrow arrow-right" onclick="nextSlide()" aria-label="Next slide">&#10095;</button>
+
+    <!--Dots-->
+    <div class="dots" role="tablist" aria-label="Hero slides">
+        <button class="dot active" onclick="goToSlide(0)" role="tab" aria-label="Slide 1: Cloud transformation" aria-selected="true"></button>
+        <button class="dot" onclick="goToSlide(1)" role="tab" aria-label="Slide 2: M365 Migration" aria-selected="false"></button>
+    </div>
+
+    <!--Progress bar showing time until auto-advance-->
+    <div class="hero-progress" aria-hidden="true">
+        <div class="hero-progress-fill" id="heroProgressFill"></div>
+    </div>
+
+    <!--Screen-reader only live region-->
+    <div class="sr-only" aria-live="polite" id="slideAnnouncer"></div>
+
+</section>
+
+
+
+<!--End to End Services-->
+<section id="end-to-end-sevices">
+
+    <div class="end-to-end-title">
+        <span class="tag">What We Do</span>
+        <div>
+            <h2>End-to-End Cloud Services</h2>
+            <p>Comprehensive solutions to power your digital transformation journey</p>
+        </div>
+    </div>
+
+    <div class="end-to-end-container">
+
+        <a href="./servicepage_html/m365Migration.html" class="end-to-end-card">
+            <img src="./assets/image/m365-migration-CH_Ixn2k.jpg" alt="M365 Migration" loading="lazy">
+            <div class="card-body">
+                <p>M365 Migration</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+
+        <a href="./servicepage_html/cloudMigration.html" class="end-to-end-card">
+            <img src="./assets/image/cloud-migration-BJ6woHGw.jpg" alt="Cloud Migration" loading="lazy">
+            <div class="card-body">
+                <p>Cloud Migration</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+
+        <a href="./servicepage_html/cloudArchitecture.html" class="end-to-end-card">
+            <img src="./assets/image/cloud-architecture-oxRLET4B.jpg" alt="Cloud Architecture" loading="lazy">
+            <div class="card-body">
+                <p>Cloud Architecture</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+
+        <a href="./servicepage_html/managedOperations.html" class="end-to-end-card">
+            <img src="./assets/image/saas-Bz60X229.jpg" alt="Managed Operations" loading="lazy">
+            <div class="card-body">
+                <p>Managed Operations</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+
+        <a href="./servicepage_html/appDevelopmentpage.html" class="end-to-end-card">
+            <img src="./assets/image/app-development-C9LI0bI1.jpg" alt="App Development" loading="lazy">
+            <div class="card-body">
+                <p>App Development</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+
+        <a href="./servicepage_html/infrastructureServices.html" class="end-to-end-card">
+            <img src="./assets/image/infrastructure-DCh3iXzN.jpg" alt="Infrastructure" loading="lazy">
+            <div class="card-body">
+                <p>Infrastructure</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+
+    </div>
+
+    <a href="./services.html" class="end-to-end-btn">
+        View All Services →
+    </a>
+
+</section>
+<!--Why Cloudtech Nova-->
+<section id="why-cloudtechnova">
+    <div class="whyNova">
+        <div class="left-why">
+            <span class="tag">Why CloudTechnova</span>
+            <h1>Built for enterprise,<br>
+            <span>designed for growth</span></h1>
+            <p>We combine deep technical expertise with industry best practices to deliver cloud solutions that transform your business operations.</p>
+            <a href="./about.html" class="learnMore">Learn More About Us</a>
+        </div>
+        <div class="right-why">
+            <div class="box">
+                <div class="why-card">
+                    <div class="icon-box">
+                    <img src="./assets/icon/cloud-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3>Multi-Cloud Mastery</h3>
+                    <p>Expert solutions across AWS, Azure, and Google Cloud with unified management.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-box">
+                    <img src="./assets/icon/security-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3>Zero-Trust Security</h3>
+                    <p>Enterprise-grade protection with SOC 2, HIPAA, and PCI-DSS compliance.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-box">
+                    <img src="./assets/icon/spark-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3>Rapid Delivery</h3>
+                    <p>Accelerated migrations with zero-downtime deployment methodologies.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-box">
+                    <img src="./assets/icon/people-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3>Dedicated Experts</h3>
+                    <p>24/7 support from certified cloud architects who know your business.</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+<!-- Why CloudTechNova -->
+
+
+    <div class="strip">
+        <div class="inn">
+            <p class="a">500+</p>
+            <p class="b">Cloud Migrations</p>
+        </div>
+        <div class="inn">
+            <p class="a">99.9%</p>
+            <p class="b" style="margin-left: 20px;">Uptime SLA</p>
+        </div>
+        <div class="inn">
+            <p class="a">40%</p>
+            <p class="b">Avg Cost Savings</p>
+        </div>
+        <div class="inn">
+            <p class="a">24/7</p>
+            <p class="b">Expert Support</p>
+        </div>
+    </div>
+</section>
+<!--Testinomals-->
+    <section id="testimonials">
+
+    <div class="title">
+        <p class="subtitle">Testimonials</p>
+        <h2 class="sub">Trusted by Industry Leaders</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="badge">
+                <img src="https://www.svgrepo.com/show/144694/badge.svg" alt="badge">
+            </div>
+            <p>"CloudTechnova transformed our infrastructure, reducing costs by 40% while improving performance tenfold."</p>
+
+            <div class="profile">
+                <div class="avatar">SC</div>
+
+                <div>
+                    <h4>Sarah Chen</h4>
+                    <p>CTO, FinanceCore</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">
+                <img src="https://www.svgrepo.com/show/144694/badge.svg" alt="badge">
+            </div>
+            <p>"Their DevOps expertise accelerated our release cycle from months to days. Absolutely game-changing."</p>
+
+            <div class="profile">
+                <div class="avatar">MR</div>
+
+                <div>
+                    <h4>Michael Rodriguez</h4>
+                    <p>VP Engineering, HealthTech Solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">
+                <img src="https://www.svgrepo.com/show/144694/badge.svg" alt="badge">
+            </div>
+            <p>"Zero downtime during our migration. The team's expertise and communication were exceptional."</p>
+
+            <div class="profile">
+                <div class="avatar">JL</div>
+
+                <div>
+                    <h4>Jennifer Lee</h4>
+                    <p>IT Director, RetailMax</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--Industries-->
+<section id="industries">
+
+    <div class="section-title">
+        <span class="tag">Industries</span>
+        <h2>Expertise Across Sectors</h2>
+    </div>
+
+    <div class="industry-container">
+
+        <a href="./industry_page_html/healthcare.html" class="industry-card">
+            <img src="./assets/image/healthcare-DEhFygPd.jpg" alt="Healthcare" loading="lazy">
+            <div class="card-text">
+                <h3>Healthcare</h3>
+                <p>HIPAA-compliant solutions</p>
+            </div>
+        </a>
+
+        <a href="./industry_page_html/finance.html" class="industry-card">
+            <img src="./assets/image/finance-D7IfNLT6.jpg" alt="Finance" loading="lazy">
+            <div class="card-text">
+                <h3>Finance</h3>
+                <p>Secure financial platforms</p>
+            </div>
+        </a>
+
+        <a href="./industry_page_html/retail.html" class="industry-card">
+            <img src="./assets/image/retail--RgxIAIJ.jpg" alt="Retail" loading="lazy">
+            <div class="card-text">
+                <h3>Retail</h3>
+                <p>Scalable commerce infrastructure</p>
+            </div>
+        </a>
+
+        <a href="./industry_page_html/saas.html" class="industry-card">
+            <img src="./assets/image/saas-Bz60X229.jpg" alt="SaaS" loading="lazy">
+            <div class="card-text">
+                <h3>SaaS</h3>
+                <p>High-performance app platforms</p>
+            </div>
+        </a>
+
+    </div>
+
+    <a href="./industries.html" class="industry-btn">
+        Explore All Industries →
+    </a>
+
+</section>
+
+<!--call to action-->
+
+<section id="cta">
+
+    <div class="cta-icon">
+        <img src="./assets/icon/arrow-growth.svg" alt="Growth">
+    </div>
+
+    <h2>
+        Ready to transform your<br>
+        <span class="highlight">cloud infrastructure?</span>
+    </h2>
+
+    <p>
+        Schedule a free consultation with our cloud architects and discover
+        how we can accelerate your digital transformation.
+    </p>
+
+    <div class="cta-buttons">
+        <a href="./services.html" class="btn1">
+            Get Started →
+        </a>
+
+        <a href="./contact.html" class="btn2">
+            Contact Us
+        </a>
+    </div>
+
+</section>
+    </main>
 
 <footer>
 
