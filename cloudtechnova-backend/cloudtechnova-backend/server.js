@@ -1,17 +1,22 @@
 //Load the tools
-require('dotenv').config();       //.env file 
+require('dotenv').config();       //.env file
+const dns = require('dns');
+dns.setDefaultResultOrder('ipv4first'); // Fix for ENETUNREACH: force IPv4 DNS resolution
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const app = express();
 
 // Basic setup
-app.use(cors());         
-app.use(express.json()); 
+app.use(cors());
+app.use(express.json());
 
-// Set up the gmail
+// Set up the gmail transporter (explicit host/port instead of "service: gmail" shorthand)
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true, // true for port 465, false for 587
   auth: {
     user: process.env.GMAIL_USER,          // comes from your .env file
     pass: process.env.GMAIL_APP_PASSWORD   // comes from your .env file
@@ -29,9 +34,9 @@ app.post('/send-message', async (req, res) => {
 
   // Build the email
   const mailOptions = {
-    from: process.env.GMAIL_USER,           
-    to: process.env.COMPANY_EMAIL,    
-    replyTo: email,                         
+    from: process.env.GMAIL_USER,
+    to: process.env.COMPANY_EMAIL,
+    replyTo: email,
     subject: `New message from ${fullName} via CloudTechnova website`,
     text: `Name: ${fullName}
 Company: ${company || 'N/A'}
