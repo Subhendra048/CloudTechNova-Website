@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const charHint = message?.closest("div")?.querySelector(".char-hint");
     const MAX_CHARS = 500;
 
+    // ---- API URl
+    const API_URL =
+        window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+            ? "http://localhost:5000"
+            : "https://cloudtechnova-website.onrender.com";
+
     //Character counter
     if (message && charCount) {
         message.addEventListener("input", () => {
@@ -62,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-   
+
 
     function showSuccessBanner() {
         const existing = document.querySelector(".success-banner");
@@ -139,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             //submission backend
             try {
-                const response = await fetch("http://localhost:5000/send-message", {
+                const response = await fetch(`${API_URL}/send-message`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
