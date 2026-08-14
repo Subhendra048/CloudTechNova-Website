@@ -1,4 +1,4 @@
-//Load the tools
+//Loading the tools
 require('dotenv').config();       //.env file
 const express = require('express');
 const cors = require('cors');
@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Set up Resend (sends email over HTTPS, not SMTP — avoids Render's blocked SMTP ports)
+// Set up Resend 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Create the "endpoint"
